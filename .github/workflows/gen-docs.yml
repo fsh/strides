@@ -4,7 +4,7 @@ name: Generate and publish documentation
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
