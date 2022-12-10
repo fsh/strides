@@ -2,7 +2,7 @@
 # Strides
 
 See [generated documentation](https://fsh.github.io/strides/strides.html) for
-most up-to-date information.
+the most up-to-date information.
 
 ## Indexing and Slicing with Stride
 

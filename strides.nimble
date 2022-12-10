@@ -9,4 +9,5 @@ srcDir        = "src"
 
 # Dependencies
 
-requires "nim >= 1.7" # inheritable pragma with generics is bugged in stable?
+# inheritable pragma with generics is bugged in stable 1.6?
+requires "nim >= 1.7"
