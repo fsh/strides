@@ -135,6 +135,9 @@ type
     ##
     count*: I
 
+static:
+  assert sizeof(LinearSegment[int, int]) == sizeof(int) * 3
+
 func initLinearSequence*[T](initial, stride: T): LinearSequence[T] {.inline.} =
   result.initial = initial
   result.stride = stride
