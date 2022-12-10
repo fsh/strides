@@ -1,0 +1,44 @@
+Strides	strides.html
+`&amp;`	strides.html#&,Slice,	strides: `&amp;`(a: Slice; b: distinct Slice): auto	
+`$`	strides.html#$,BackwardsIndex	strides: `$`(a: BackwardsIndex): string	
+LinearSequence	strides.html#LinearSequence	strides: LinearSequence	
+LinearSegment	strides.html#LinearSegment	strides: LinearSegment	
+initLinearSequence	strides.html#initLinearSequence,T,T	strides: initLinearSequence[T](initial, stride: T): LinearSequence[T]	
+initLinearSequence	strides.html#initLinearSequence,T	strides: initLinearSequence[T](stride: T): LinearSequence[T]	
+initLinearSegment	strides.html#initLinearSegment,T,T,I	strides: initLinearSegment[T, I](initial, stride: T; count: I): LinearSegment[T, I]	
+`$`	strides.html#$,LinearSequence	strides: `$`(ls: LinearSequence): string	
+`$`	strides.html#$,LinearSegment	strides: `$`(seg: LinearSegment): string	
+toTuple	strides.html#toTuple.c,LinearSequence[T]	strides: toTuple[T](ls: LinearSequence[T]): (T, T)	
+toTuple	strides.html#toTuple.c,LinearSegment[T,I]	strides: toTuple[T, I](seg: LinearSegment[T, I]): (T, T, I)	
+items	strides.html#items.i,LinearSequence[T]	strides: items[T](ls: LinearSequence[T]): T	
+items	strides.html#items.i,LinearSegment	strides: items(seg: LinearSegment): auto	
+pairs	strides.html#pairs.i,LinearSegment	strides: pairs(seg: LinearSegment): auto	
+StridedSlice	strides.html#StridedSlice	strides: StridedSlice	
+StridedIndex	strides.html#StridedIndex	strides: StridedIndex	
+initStridedSlice	strides.html#initStridedSlice,T,U,int	strides: initStridedSlice[T, U](a: T; b: U; s: int): StridedSlice[T, U]	
+`$`	strides.html#$,StridedSlice	strides: `$`(ss: StridedSlice): string	
+`$`	strides.html#$,StridedIndex	strides: `$`(si: StridedIndex): string	
+toTuple	strides.html#toTuple.c,StridedSlice[T,I]	strides: toTuple[T, I](ss: StridedSlice[T, I]): (T, T, I)	
+toStridedSlice	strides.html#toStridedSlice.c,LinearSegment	strides: toStridedSlice(seg: LinearSegment): auto	
+toLinearSegment	strides.html#toLinearSegment,StridedSlice	strides: toLinearSegment(ss: StridedSlice): auto	
+items	strides.html#items.i,StridedSlice	strides: items(ss: StridedSlice): auto	
+AnyStrided	strides.html#AnyStrided	strides: AnyStrided	
+AnyIndexing	strides.html#AnyIndexing	strides: AnyIndexing	
+`^!`	strides.html#^!,AnyIndexing,SomeInteger	strides: `^!`(idx: AnyIndexing; length: SomeInteger): auto	
+`^?`	strides.html#^?,AnyIndexing,SomeInteger	strides: `^?`(idx: AnyIndexing; length: SomeInteger): auto	
+`@:`	strides.html#@:,HSlice[T,U],int	strides: `@:`[T, U](slice: HSlice[T, U]; step: int): StridedSlice[T, U]	
+`@:`	strides.html#@:,T,int	strides: `@:`[T: SomeInteger](e: T; step: int): StridedSlice[T, int]	
+`@:`	strides.html#@:,int	strides: `@:`(step: int): auto	
+maxLT	strides.html#maxLT,LinearSequence[T],T	strides: maxLT[T](ls: LinearSequence[T]; bound: T): auto	
+maxLTE	strides.html#maxLTE,LinearSequence[T],T	strides: maxLTE[T](ls: LinearSequence[T]; bound: T): auto	
+minGT	strides.html#minGT,LinearSequence[T],T	strides: minGT[T](ls: LinearSequence[T]; bound: T): auto	
+minGTE	strides.html#minGTE,LinearSequence[T],T	strides: minGTE[T](ls: LinearSequence[T]; bound: T): auto	
+len	strides.html#len,LinearSegment	strides: len(seg: LinearSegment): auto	
+last	strides.html#last,LinearSegment	strides: last(seg: LinearSegment): auto	
+`[]`	strides.html#[],LinearSequence[T],T	strides: `[]`[T](ls: LinearSequence[T]; k: T): auto	
+`[]`	strides.html#[],LinearSequence[T],HSlice	strides: `[]`[T](ls: LinearSequence[T]; slice: HSlice): LinearSegment[T, T]	
+`[]`	strides.html#[],LinearSegment,HSlice	strides: `[]`(seg: LinearSegment; slice: HSlice): auto	
+`[]`	strides.html#[],openArray[T],AnyStrided	strides: `[]`[T](arr: openArray[T]; seg: AnyStrided): seq[T]	
+`[]`	strides.html#[],string,AnyStrided	strides: `[]`(s: string; seg: AnyStrided): string	
+`[]=`	strides.html#[]=,string,AnyStrided,string	strides: `[]=`(s: var string; seg: AnyStrided; input: string)	
+`[]=`	strides.html#[]=,seq[T],AnyStrided,openArray[T]	strides: `[]=`[T](s: var seq[T]; seg: AnyStrided; input: openArray[T])	
