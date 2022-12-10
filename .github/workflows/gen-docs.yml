@@ -17,7 +17,7 @@ jobs:
 
     - name: Cache choosenim
       id: cache-choosenim
-      uses: actions/cache@v1
+      uses: actions/cache@v3
       with:
         path: ~/.choosenim
         key: ${{ runner.os }}-choosenim-devel-${{ steps.get-date.outputs.date }}
@@ -26,7 +26,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ~/.nimble
-        key: ${{ runner.os }}-nimble-${{ hashFiles('*.nimble') }}
+        key: ${{ runner.os }}-nimble-${{ hashFiles('strides.nimble') }}
     - uses: jiro4989/setup-nim-action@v1
       with:
         nim-version: 'devel'
