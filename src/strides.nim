@@ -95,7 +95,6 @@ runnableExamples:
     # ...
 
 
-
 import std/[math, strformat, algorithm]
 
 func `&`*(a: Slice, b: distinct Slice): auto =
