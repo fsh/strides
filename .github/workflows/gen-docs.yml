@@ -1,5 +1,5 @@
 
-name: Generate and publish documentation
+name: Test and generate docs
 
 on:
   push:
@@ -32,6 +32,9 @@ jobs:
         nim-version: 'devel'
 
     - uses: actions/checkout@v3
+
+    - name: Run tests
+      run: nimble test
 
     - name: Clean up old documentation
       run: rm -rf ./htmldocs

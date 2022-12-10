@@ -1,7 +1,7 @@
 
 # Strides
 
-See [generated documentation](https://fsh.github.com/strides/strides.html) for
+See [generated documentation](https://fsh.github.io/strides/strides.html) for
 most up-to-date information.
 
 ## Indexing and Slicing with Stride
@@ -84,4 +84,4 @@ The _resolved_ type of `StridedSlice` (made with `@:`) is a `LinearSegment`.
 _Resolved_ here means when any `BackwardsIndex` or `StrideIndex` has been
 translated into actual integers by interpreting them in the context of a length. And a `LinearSegment` is the finite version of a `LinearSequence`.
 
-Check out the [generated documentation](https://fsh.github.com/strides/strides.html) for more.
+Check out the [generated documentation](https://fsh.github.io/strides/strides.html) for more.
